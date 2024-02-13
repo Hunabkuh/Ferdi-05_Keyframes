@@ -1,0 +1,153 @@
+/* 2- Con @keyframes: hacer que una pelota rebote verticalmente. Puede añadirse distorsión a la pelota o no (cuando choca contra el suelo se aplasta). Hacer un loop infinito.
+
+Recordar que hacen falta al menos: el nombre, la duración y la cantidad de veces de la animación: animation: iryvenir 2s 3; */
+
+.pelota {
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: pelota 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    display: none;
+
+}
+
+.pelota:hover {
+    position: relative;
+    animation: pelota 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    background-color: aqua;
+
+}
+
+@keyframes pelota {
+    0% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    100% {
+        top: 500px;
+        width: 150px;
+        height: 180px;
+    }
+
+    /*
+    10% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    15% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    20% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    25% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    30% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    35% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    40% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    45% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    50% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    60% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    65% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    55% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    70% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    75% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    80% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    85% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    90% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    95% {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+    }
+
+    100% {
+        top: 500px;
+        height: 150px;
+        width: 180px;
+    } */
+}

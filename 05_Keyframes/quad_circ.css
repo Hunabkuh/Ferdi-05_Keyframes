@@ -1,0 +1,26 @@
+/* 1- Solo con hover y transition: tienes un cuadrado de un color,
+y cuando pasas el ratón por encima,
+se cambia a un círculo de otro color. */
+
+#cuadrado{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        background: red;
+        width: 100px;
+    }
+
+    100% {
+        top: 200px;
+        background: yellow;
+        width: 300px;
+    }
+}
